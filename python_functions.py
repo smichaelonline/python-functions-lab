@@ -46,7 +46,7 @@ def largest(nums): #define function and place nums in parameters
 def occurences(int_string, string2): 
   return int_string.count(string2) # count method returns the numbers of times the string2 value is present in the initial string (int_string)
 
-print(occurences('soupso', 'so'))
+# print(occurences('soupso', 'so'))
 
 #! need to rename parameters so they make more sense 
 
@@ -58,3 +58,12 @@ print(occurences('soupso', 'so'))
   # product(-1, 4) # returns -4
   # product(2, 5, 5) # returns 50
   # product(4, 0.5, 5) # returns 10.0
+
+def product(*args): #define function and use *args to accept a arbitrary number of numbers
+  total = 1 #set total to 1 
+  for arg in args: #loop through each arg in *args that are inputted by the user
+    total *= arg #multiply each arg to get the total
+  return total #return total 
+
+print(product(2,5,5)) # returns 50
+print(product(50,40,3,6,7)) #252000
