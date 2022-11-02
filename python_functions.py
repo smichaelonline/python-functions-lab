@@ -4,11 +4,16 @@
   # sum_to(6)  # returns 21
   # sum_to(10) # returns 55
 
-def sum_to(num):
-  sum = 0
-  for n in range(1, num + 1):
+def sum_to(num): #call function
+  sum = 0 #assign starting sum to 0
+  for n in range(1, num + 1): 
+  #use range to loop a specific number of times to add from 1 to entered number
     sum += n 
   return sum 
+
+# print(sum_to(6)) # return 21
+# print(sum_to(20))# return 210 
+
 
 #------------------------------
 
@@ -17,6 +22,15 @@ def sum_to(num):
 #* For example:
   # largest([1, 2, 3, 4, 0])  # returns 4
   # largest([10, 4, 2, 231, 91, 54])  # returns 231
+
+def largest(nums): #define function and place nums in parameters 
+  largest = 0 # set largest to 0 
+  for num in nums: # for loop to look at each number within list of numbers 
+    if num > largest: # if statement to assign largest num in list to largest 
+      largest = num 
+  return largest #return largest number 
+
+# print(largest([7, 10, 12, 15])) # return 15 
 
 
 #------------------------------
