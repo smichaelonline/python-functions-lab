@@ -43,6 +43,12 @@ def largest(nums): #define function and place nums in parameters
   # occurrences('fleep floop', 'ee')  # returns 1
   # occurrences('fleep floop', 'fe')  # returns 0
 
+def occurences(int_string, string2): 
+  return int_string.count(string2) # count method returns the numbers of times the string2 value is present in the initial string (int_string)
+
+print(occurences('soupso', 'so'))
+
+#! need to rename parameters so they make more sense 
 
 #------------------------------
 
